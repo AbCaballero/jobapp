@@ -1,0 +1,498 @@
+
+
+
+/* Column Fixes */
+.two_column .center_column {
+  width: 66%;
+}
+.left_column {
+  width: 30%;
+  margin-right: 3%;
+}
+.right_column {
+  width: 30%;
+  margin-left: 3%;
+}
+
+
+
+/* List Fixes */
+.menu li {
+	display: inline;
+	width:210px;
+}
+#blueTabs ul li {
+	display: block;
+	float: left;
+	width: 100px;
+	margin-right: 5px;
+}
+
+
+
+/* Form Fixes */
+form .no_label {
+	margin-top: 3px;
+}
+#login_form .forgot_password {
+	margin-top: -20px;
+}
+select {
+	width: 90%;
+	margin: 3px 5px 5px 0px;
+}
+input.button {
+	padding: 1px 1px 1px 1px;
+	margin: 1px 5px 1px 0px;
+	width: auto;
+	min-height: 20px;
+}
+input.button.previous {
+	padding: 1px 1px 1px 10px;
+}
+input.button.submit {
+	padding: 1px 20px 1px 1px;
+}
+div.form_end input.button {
+	margin-top: -20px;
+}
+input {
+	width: 100%;
+	margin: 5px 0;
+}
+
+
+div.percent_10 { width: 30px; }
+div.percent_15 { width: 55px; }
+div.percent_20 { width: 80px; }
+div.percent_25 { width: 105px; }
+div.percent_30 { width: 130px; }
+div.percent_35 { width: 155px; }
+div.percent_40 { width: 180px; }
+div.percent_45 { width: 205px; }
+div.percent_50 { width: 230px; }
+div.percent_55 { width: 254px; }
+div.percent_60 { width: 279px; }
+div.percent_65 { width: 304px; }
+div.percent_70 { width: 329px; }
+div.percent_75 { width: 354px; }
+div.percent_80 { width: 379px; }
+div.percent_85 { width: 404px; }
+div.percent_90 { width: 429px; }
+div.percent_95 { width: 454px; }
+div.percent_100 { width: 490px; }
+div.percent_10.row_end { width: 41px; }
+div.percent_15.row_end { width: 66px; }
+div.percent_20.row_end { width: 91px; }
+div.percent_25.row_end { width: 116px; }
+div.percent_30.row_end { width: 141px; }
+div.percent_35.row_end { width: 166px; }
+div.percent_40.row_end { width: 191px; }
+div.percent_45.row_end { width: 216px; }
+div.percent_50.row_end { width: 241px; }
+div.percent_55.row_end { width: 270px; }
+div.percent_60.row_end { width: 290px; }
+div.percent_65.row_end { width: 315px; }
+div.percent_70.row_end { width: 340px; }
+div.percent_75.row_end { width: 365px; }
+div.percent_80.row_end { width: 390px; }
+div.percent_85.row_end { width: 415px; }
+div.percent_90.row_end { width: 440px; }
+div.percent_95.row_end { width: 465px; }
+
+
+
+/* THIS IS THE STYLE SHEET FOR IE8 AND LOWER */
+.menu {
+	width:220px;
+}
+.menu li a {
+	width:auto;
+	display:inline;
+}
+
+
+.fieldset-legend {
+	margin-left:0px;
+}
+/*--------------LOGIN FORM STARTS HERE---------------------*/
+.login-btn {
+	width:89px;
+	height:29px;
+}
+.form-item-cert-number {
+float: left;
+width: 100px;
+margin-top:0px;
+margin-right:150px;
+}
+/**[id*='edit-board-another'] {
+	float:left;
+}*/
+/*--------------REGISTER FORM STARTS HERE---------------------*/
+h2 {
+	font-style:normal;
+}
+.form-item-locum-us {
+
+}
+#edit-locum-us, #edit-permanent-placement, #edit-locum-int, #edit-gov-op {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+.form-item-locum-us label, .form-item-locum-int label, .form-item-permanent-placement label, .form-item-gov-op label {
+	width:auto;
+}
+
+/*--------------IDENTITY FORM STARTS HERE---------------------*/
+.container-inline-date {
+clear:none;
+}
+
+#edit-dob-month, #edit-dob-day  {
+	width:72px;
+	float:left;
+}
+#edit-dob-year {
+	width:72px;
+}
+.radios-yes-no label {
+	margin-top:-20px;
+}
+
+.identity-prev {
+	margin-top:20px;
+}
+.var_label_iden {
+	margin-bottom:15px;
+}
+#edit-prev, #edit-save-logout {
+ 
+}
+input.button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 5px 0px 5px 0px;
+  margin: 10px 10px 10px 0;
+  font-size: 12px;
+  line-height: 17px;
+  color: #5f6062;
+  background-color: #ececec;
+  border: none;
+  font-weight: bold;
+}
+input.button {
+  padding: 4px 0px 4px 0px;
+}
+.prev {
+	width:80px;
+	height:26px;
+}
+.next {
+	width:56px;
+	height:26px;
+}
+#edit-submit {
+	width:75px;
+	height:26px;
+}
+.ajax-processed {
+
+	color:#ffffff;
+	background-color:#a5a5a5;
+	margin-top:15px;
+	margin-bottom:25px;
+	margin-right:10px;
+	border:none;
+	width:auto;
+	height:25px;
+	font-weight:bold;
+}
+input.ajax-processed {
+	padding: 4px 0px 4px 0px;
+}
+.date-month {
+	float:left;
+	width:auto;
+}
+.date-day {
+	float:left;
+	width:auto;
+}
+.date-year {
+	float:left;
+	width:auto;
+}
+*[class*='-exp-date'] label {
+
+}
+*[class*='-exp-date']{
+
+}
+.med-yes-no {
+	margin-right:220px;
+}
+/*--------------INTERNSHIP FORM STARTS HERE---------------------*/
+*[class*='date-title'] {
+  float:left;
+  margin-right:350px;
+}
+.form-item-affiliations-not-applicable {
+	width:auto;
+}
+.form-item-affiliations-not-applicable label {
+	width:200px;
+}
+.form-item-affiliations-not-applicable input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+
+.date-padding {
+	margin-top:5px;
+}
+/*--------------CERTIFICATIONS FORM STARTS HERE---------------------*/
+
+.form-item-not-applicable {}
+*[class*='-not-applicable'] {
+	margin-right:380px;
+}
+*[class*='-not-applicable'] input {
+  margin-top:7px;
+	float:left;
+	width:auto;
+}
+*[class*='-not-applicable'] label {
+  width:200px;
+  margin-right:0px;
+}
+/*.form-item-not-applicable input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+.form-item-not-applicable label {
+	width:auto;
+}*/
+*[class*='-cert-name'] {
+	width:100px;
+	float:left;
+	margin-right:20px;
+}
+*[class*='-cert-name'] input {
+	width:90px;
+}
+*[class*='-cert-num'] {
+	width:250px;
+	float:left;
+
+}
+*[class*='-cert-num'] input {
+	width:90px;
+}
+.form-item-affiliations-not-applicable {
+}
+.form-item-affiliations-not-applicable input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+.form-item-affiliations-not-applicable label {
+	width:auto;
+}
+*[class$='-na'] {
+
+} 
+*[class$='-na'] input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+*[class$='-na'] label {
+	width:auto;
+}
+.line-solid3 {
+  margin-top: 90px;
+  margin-bottom: 15px;
+  height: 5px;
+  border-bottom: solid;
+  border-bottom-color: #999;
+  border-width: 1px;
+} 
+.form-item-accept input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+.form-item-accept label {
+	width:auto;
+}
+.form-item-licensure-na input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+.form-item-licensure-na label {
+	width:auto;
+}
+.form-item-deareg-pending  {
+
+}
+.form-item-deareg-pending label {
+	width:auto;
+ 
+}
+.form-item-deareg-pending input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+*[class$='-dea-lic-num'] input {
+  width:100px;
+}
+*[class$='-dea-lic-num'] {
+	margin-right:200px;
+}
+*[class*='-orig-lic'] input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+*[class*='-orig-lic'] label {
+	width:auto;
+}
+*[class$='dea-date-issued'] {
+
+}
+*[class*='-lic-number'] {
+  margin-top:-3px;
+}
+*[class*='-lic-num'] {
+  margin-top:-3px;
+}
+.form-item-deareg-na {
+	width:auto;
+	display:inline;
+}
+.form-item-deareg-na label {
+	float:left;
+	width:auto;
+}
+.form-item-deareg-na input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+.form-item-deareg-pending {
+	width:auto;
+}
+.form-item-deareg-pending label {
+	width:80px;
+	
+}
+.form-item-deareg-pending input {
+	margin-top:7px;
+	float:left;
+	width:15px;
+}
+
+*[class*='-not'] {
+	float:left;
+	width:auto;
+}
+*[class*='-not'] input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+*[class*='-not'] label {
+	float:left;
+	width:auto;
+}
+*[class*='-all'] {
+  float:left;
+}
+*[class*='-all'] input {
+	margin-top:7px;
+	float:left;
+	width:15px;
+}
+*[class*='-all'] label {
+	width:auto;
+}
+*[class*='-schedules2'] input, *[class*='-schedules3'] input, 
+*[class*='-schedules2N'] input, *[class*='-schedules3N'] input {
+	margin-top:7px;
+	float:left;
+	width:auto;
+}
+*[class*='-schedules4'], *[class*='-schedules5'] {
+}
+
+*[class*='-schedules4'] input, *[class*='-schedules5'] input {
+	margin-top:7px;
+	float:left;
+	width:15px;
+}
+*[class*='-schedules4'] label, *[class*='-schedules5'] label {
+	width:35px;
+}
+/*--------------------------DISCIPLINARY-----------------------------------*/
+.dis-radio {
+	width:130px;
+}
+/*-----------------------REFERENCES-------------------------------*/
+.phone_txtfld {
+	margin-top:-2px;
+}
+
+input[type=text]:focus {
+  color:#000000;
+}
+input[type=text] {
+  color:#000000;
+}
+input[type=password] {
+  color:#000000;
+  padding-left:5px;
+}
+
+/*----------------------------CV UPLOAD-------------------------*/
+#upload-btn input {
+	display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 3px 0px 3px 0px;
+  margin: 10px 10px 10px 0;
+  font-size: 12px;
+  line-height: 17px;
+  color: #5f6062;
+  background-color: #ececec;
+  border: none;
+  font-weight: bold;
+  margin-left:10px;
+}
+#edit-upload {
+	height:380px;
+}
+#blueTabs li {
+	display:inline;
+}
+/*-------------------------EXAM PAGE--------------------------------*/
+.date-month {
+	width:72px;
+}
+h3 {
+font-weight: bold;
+margin-bottom: 0px;
+}
+
+
+
+
+
+
+

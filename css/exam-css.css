@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+
+/*------------------------------------EXAM PAGE-----------------------------*/
+
+
+*[class*='-exam-name'] {
+  float: left;
+  margin-right: 10px;
+  width:140px;
+}
+*[class*='-times'] {
+  float: left;
+  margin-right:5px;
+  /*margin-top:-15px;*/
+  width:60px;
+}
+*[class*='-times'] label {
+  margin-top:-15px;
+  line-height:12px;
+}
+*[class*='attempt'] {
+	float:left;
+	width:auto;
+	margin-top:10px;
+	margin-right:5px;
+	margin-left:213px;
+	/*border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #333;*/
+}
+.attempt01, .attempt11, .attempt21, .attempt31, .attempt41,
+.attempt51, .attempt61 {
+	margin-left:0px;
+	margin-top:25px;
+}
+.attempt02, .attempt03, .attempt04, .attempt05,
+.attempt06, .attempt07 {
+	margin-left:213px;
+}
+*[class*='-score'] {
+  float: left;
+  width:40px;
+}
+@-moz-document url-prefix() {
+	*[id*='edit-date'] {
+	width:auto;
+	display:inline;
+}
+}
+
+@-moz-document url-prefix() {
+	.date-month {
+	width:72px;
+	float:left;
+}
+}
+@-moz-document url-prefix() {
+	.date-year {
+	width:72px;
+	float:left;
+}
+}
+.container-inline-date .form-type-date-select {
+	float:left;
+	width:150px;
+}
+/**[id*='edit-score11'] input, *[id*='edit-score21'] input,
+*[id*='edit-score31'] input, *[id*='edit-score41'] input,
+*[id*='edit-score51'] input, *[id*='edit-score61'] input {
+  margin-top:0px;
+}
+*[id*='-date02'], *[id*='-date03'], 
+*[id*='-date04'], *[id*='-date05'],
+*[id*='-date06'], *[id*='-date07'],
+*[id*='-date1'], *[id*='-date2'],
+*[id*='-date3'], *[id*='-date4'],
+*[id*='-date5'], *[id*='-date6'] {
+  margin-top:10px;
+}
+*[class*='-score02'] input, *[class*='-score03'] input, 
+*[class*='-score04'] input, *[class*='-score05'] input,
+*[class*='-score06'] input, *[class*='-score07'] input,
+*[class*='-score1'] input, *[class*='-score2'] input,
+*[class*='-score3'] input, *[class*='-score4'] input,
+*[class*='-score5'] input, *[class*='-score6'] input {
+  margin-top: 20px;
+}*/
+
+/*.container-inline-date *[class*='-item-date'] label {
+	width:auto;
+}
+.container-inline-date *[class*='-item-date'] select {
+	width:auto;
+}
+*/
+
+/*.container-inline-date *[class*='-et-0-date'] {
+  float: left;
+}
+*[id*='edit-exams-taken-et-0-date02'], *[id*='edit-exams-taken-et-0-date03'], 
+*[id*='edit-exams-taken-et-0-date04'], *[id*='edit-exams-taken-et-0-date05'],
+*[id*='edit-exams-taken-et-0-date06'], *[id*='edit-exams-taken-et-0-date07'] {
+  margin-top:10px;
+}
+*[class*='-score02'], *[class*='-score03'], 
+*[class*='-score04'], *[class*='-score05'],
+*[class*='-score06'], *[class*='-score07'] {
+  margin-top:15px;
+}
+.container-inline-date *[class*='-et-0-date'] label {
+	width:auto;
+}
+*[id*='-et-0-date0'] *[class^='-month'] {
+	color:red;
+	width:auto;
+}*/
+
+/*.container-inline-date *[class*='-et-0-date'] select {
+	width:auto;
+}*/
+/*
+.date-month {
+	width:auto;
+}
+.date-year {
+	width:auto;
+}
+.date-month *[id*='-et-0-date'] {
+	width:auto;
+}
+.date-year *[id*='-et-0-date'] {
+	width:auto;
+}
+
+.date-month *[id*='-et-1-date'] {
+	width:auto;
+}
+.date-year *[id*='-et-1-date'] {
+	width:auto;
+}*/
+
+/*#exams-date *[class*='-date'] {
+	float:left;
+	width:160px;
+}
+#exams-date *[class*='-month'] {
+	width:auto;
+}
+#exams-date *[class*='-year'] {
+	width:auto;
+}*/
+
+/**[class*='form-item-exams-state-cntr-'] {
+  width:150px;
+}*/
+.form-item-exams-state-cntr-not-applicable {
+	width:100%;
+}
+
+*[class*='-result'] {
+  float: left;
+  width:auto;
+  margin-bottom:30px;
+}
+*[class*='-result'] label {
+	width:auto;
+  margin-right:5px;
+}
+
+#state-exam-state *[class*='-state'] {
+ margin-bottom:30px;
+ width:150px;
+ margin-right:20px;
+}
+@-moz-document url-prefix() {
+	#state-exam-date *[class*='-state-exam-date'] {
+ margin-bottom:0px;
+ width:170px;
+}
+}
+#state-exam-date *[class*='-state-exam-date'] {
+ margin-bottom:30px;
+ width:150px;
+}
+#state-exam-date *[class*='-month'] {
+ width:auto;
+}
+#state-exam-date *[class*='-year'] {
+ width:auto;
+}
+
+*[class*='-state-exam-date'] {
+  float: left;
+}
+*[id*='edit-exam-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+  
+}
+*[id*='edit-exams-taken-exam-another'], 
+*[id*='edit-exams-taken-exam-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+  
+}
+
+*[id*='edit-exam-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+*[id*='edit-exams-state-cntr-exam-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-exams-state-cntr-exam-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+

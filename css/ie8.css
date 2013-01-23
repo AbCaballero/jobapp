@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* THIS IS THE STYLE SHEET FOR IE8 AND LOWER */
+/*--------------REGISTER FORM STARTS HERE---------------------*/
+
+#edit-locum-us {
+	float:left;
+	width:auto;
+}
+.form-item-locum-us {
+
+}
+.form-item-locum-us label {
+	width:auto;
+}
+
+.p-r-yn {
+  margin-top:15px;
+}
+
+
+/*--------------IDENTITY FORM STARTS HERE---------------------*/
+.date-month {
+	float:left;
+	width:auto;
+}
+.date-day {
+	float:left;
+	width:auto;
+}
+.date-year {
+	float:left;
+	width:auto;
+}
+.form-item-cert-number {
+float: left;
+width: 100px;
+margin-top:0px;
+margin-right:150px;
+}
+.ajax-processed {
+	font-weight:bold;
+}
+hr {
+	float:left;
+}
+.steps {
+	overflow:hidden;
+}

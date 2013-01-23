@@ -1,0 +1,1050 @@
+
+/**
+ * @file
+ * Job Application Layout
+ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,
+input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Page Setup */
+body {
+	font-family: 'Arial', 'Helvetica', sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+	color: #858585;
+}
+a,
+a:active,
+a:visited {
+	text-decoration: none;
+	color: #858585;
+}
+a:hover {
+	text-decoration: none;
+	color: #575757;
+}
+#page {
+	width: 767px;
+	margin: 0 auto;
+}
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+h1 {
+	font-size: 19px;
+	line-height: 25px;
+	font-weight: bold;
+	margin: 20px 2px 10px 0;
+	color: #5f5f60;
+}
+#page-title,
+#name-and-slogan,
+#site-name {
+	display: none;
+}
+h2 {
+	float: left;
+	width: 100%;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 22px 2px 2px 0;
+	color: #5f5f60;
+}
+hr.dots {
+	float: left;
+	width: 767px;
+	margin: 15px 0;
+	border: none;
+	background: url(../img/hr.form-end.png);
+}
+hr {
+	/*float: left;*/
+	width: 767px;
+	margin: 15px 0;
+	border: none;
+	background: url(../img/hr.form-end.png);
+}
+
+.error_message {
+	width: 90%;
+	padding: 5%;
+	color: #fa5d00;
+	background: #ececec;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+
+
+/* Main Content */
+#main {
+	width: 767px;
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+#content {
+  float: left;
+  display: block;
+}
+
+#content,
+#sidebar_left,
+#sidebar_right,
+#main.one_column #content .center_column,
+#main.one_column #content .left_column,
+#main.one_column #content .right_column {
+  float: left;
+  display: inline;
+  position: relative;
+}
+
+/* Columns */
+#main.one_column #content,
+.one_column .center_column {
+  width: 100%;
+}
+#main.two_column #content,
+.two_column .center_column {
+  width: 65%;
+}
+#main.three_column #content {
+  width: 30%;
+}
+#main.two_column #sidebar_left,
+#main.three_column #sidebar_left,
+.left_column {
+  width: 30%;
+  margin-right: 5%;
+}
+#main.two_column #sidebar_right,
+#main.three_column #sidebar_right,
+.right_column {
+  width: 30%;
+  margin-left: 5%;
+}
+.three_column .center_column {
+  width: 30%;
+}
+
+/* The small margins occur on the login pages, where there are specific widths */
+.small_margins.two_column .center_column {
+	width: 508px;
+}
+.small_margins .left_column {
+  width: 248px;
+  margin-right: 11px;
+}
+.small_margins .right_column {
+  width: 248px;
+  margin-left: 11px;
+}
+
+
+
+/* Header */
+#header {
+}
+#logo {
+	float: left;
+	margin-top: 20px;
+}
+#name-and-slogan {
+	display: none;
+}
+
+
+
+/* Navigation */
+#navigation {
+	display: none;
+}
+#breadcrumb {
+	display: none;
+}
+
+
+
+/* Top Nav */
+#topNav {
+	float: right;
+	margin: 10px -10px 0 0;
+}
+#topNav h2 {
+	display: none;
+}
+#topNav ul {
+	margin-right: 0;
+	list-style: none;
+}
+#topNav ul li {
+	display: inline;
+	width: auto;
+	float: left;
+	background: url(../img/divider.pipe.png) no-repeat top right;
+	margin: 0;
+	padding: 0 10px 0 5px;
+	list-style: none;
+}
+#topNav ul li a,
+#topNav ul li a:hover,
+#topNav ul li a:active,
+#topNav ul li a:visited {
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 15px;
+}
+#popup_contactUs {
+	display: none;
+	clear: both;
+	float: right;
+	height: 10px;
+	width: 170px;
+	padding: 10px;
+	margin: 8px 8px 0 0;
+	background-color: #ececec;
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
+}
+#popup_contactUs a,
+#popup_contactUs a:hover,
+#popup_contactUs a:active,
+#popup_contactUs a:visited {
+	font-weight: normal;
+}
+
+
+/* Top Blue Menu */
+#blueMenu {
+	clear: left;
+	float: left;
+	width: 767px;
+	margin: 20px auto 0 auto;
+}
+#blueBarWelcome,
+#standalone_Welcome {
+	font-size: 17px;
+	line-height: 21px;
+	float: right;
+	margin-top: 6px;
+	color: #575757;
+}
+#blueBarWelcome .applicantName,
+#standalone_Welcome .applicantName {
+	font-weight: bold;
+}
+#standalone_Welcome {
+	clear: left;
+	margin: -10px 0;
+}
+#blueTabs {
+	display: block;
+	float: left;
+	padding-left: 0;
+	margin: 0;
+}
+#blueTabs li {
+	list-style: none;
+	display: inline-block;
+	height: 20px;
+	padding: 12px 23px 0 12px;
+	background: #ececec url(../img/corner.white.png) no-repeat right top;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
+}
+#blueTabs li a,
+#blueTabs li a:hover,
+#blueTabs li a:active,
+#blueTabs li a:visited {
+	color: #5f6062;	
+}
+#blueTabs .active {
+	background-color: #899fad;
+}
+#blueTabs .active a,
+#blueTabs .active a:hover,
+#blueTabs .active a:active,
+#blueTabs .active a:visited {
+	color: #fff;
+}
+#blueBar_small {
+	clear: both;
+	display: block;
+	padding-left: 0;
+	margin: 0px;
+	height: 6px;
+	background-color: #899fad;
+}
+#blueBar {
+	display: none;
+	clear: both;
+/* 	display: block; */
+	padding-left: 0;
+	margin: 0px;
+}
+#blueBar li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 0 0 40px;
+	font-size: 11px;
+	line-height: 15px;
+}
+#blueBar a,
+#blueBar a:hover,
+#blueBar a:active,
+#blueBar a:visited {
+	color: white;
+}
+#blueBar .tab1 {
+	width: 100px;
+	background: #899fad url(../img/icon.circle-1.png) 15px 10px no-repeat;
+}
+#blueBar .tab2 {
+	width: 90px;
+	margin-left: -3px;
+	background: #899fad url(../img/icon.circle-2.png) 15px 10px no-repeat;
+}
+#blueBar .tab3 {
+	width: 125px;
+	margin-left: -3px;
+	background: #899fad url(../img/icon.circle-3.png) 15px 10px no-repeat;
+}
+#blueBar .tab4 {
+	width: 80px;
+	margin-left: -3px;
+	background: #899fad url(../img/icon.circle-4.png) 15px 10px no-repeat;
+}
+#blueBar .tab5 {
+	width: 50px;
+	margin-left: -3px;
+	background: #899fad url(../img/icon.circle-5.png) 15px 10px no-repeat;
+}
+#blueBar .tab6 {
+	width: 80px;
+	margin-left: -3px;
+	background: #899fad url(../img/icon.circle-6.png) 15px 10px no-repeat;
+}
+#blueBar .tabClock {
+	background: #899fad url(../img/icon.circle-clock.png) 15px 10px no-repeat;
+}
+#blueBar .tabChecked {
+	background: #899fad url(../img/icon.circle-check.png) 15px 10px no-repeat;
+}
+#blueBar hr {
+	height: 4px;
+	border-width: 0;
+	color: white;
+	background-color: white;
+}
+#blueBar .tab1 hr {
+	margin-right: 25%;
+}
+#blueBar .tab2 hr {
+	margin-right: 29%;
+}
+#blueBar .tab3 hr {
+	margin-right: 19%;
+}
+#blueBar .tab4 hr {
+	margin-right: 32%;
+}
+#blueBar .tab5 hr {
+	margin-right: 33%;
+}
+#blueBar .tab6 hr {
+	margin-right: 31%;
+}
+
+
+
+/* Left Application Process */
+#leftNav {}
+#leftNav .h1 {
+	margin: 22px 2px 2px 0;
+}
+#leftNav ul {
+	padding: 0;
+	margin: 0;
+}
+#leftNav ul li {
+	font-size: 12px;
+	line-height: 16px;
+	list-style: none;
+	display: inline-block;
+	float: left;
+	clear: left;
+	margin-left: -1px;
+	padding: 4px 20px 4px 0;
+}
+#leftNav ul li.hr {
+	height: 2px;
+	width: 140px;
+	background: url(../img/hr.gray-hairline.png) no-repeat left center;
+}
+#leftNav ul li.check {
+	background: url(../img/icon.small-circle-check.png) no-repeat right center;
+}
+#leftNav ul li.clock {
+	background: url(../img/icon.small-circle-clock.png) no-repeat right center;
+}
+#leftNav ul li a,
+#leftNav ul li a:active,
+#leftNav ul li a:visited {
+	font-weight: bold;
+	color: #858585;
+}
+#leftNav ul li a:hover {
+	font-weight: bold;
+	color: #575757;
+}
+#leftNav ul li.active a,
+#leftNav ul li.active a:hover,
+#leftNav ul li.active a:active,
+#leftNav ul li.active a:visited {
+	color: #a0b02b;
+}
+#leftNav ul li a .light,
+#leftNav ul li a:hover .light,
+#leftNav ul li a:active .light,
+#leftNav ul li a:visited .light {
+	font-weight: normal;
+}
+
+
+
+/* Home Page */
+#page_home img {
+	margin: 15px 0 -5px 0;
+}
+.home_text {
+	display: block;
+	height: 110px;
+	font-size: 13px;
+	line-height: 18px;
+	margin-top: 10px;
+}
+.home_text a,
+.home_text a:hover,
+.home_text a:active,
+.home_text a:visited {
+	color: #a1ad1f;
+}
+
+/* Login Page */
+#page_login p {
+	max-width: 420px;
+}
+#page_login p.subtext {
+	margin-top: 20px;
+}
+#login_form {
+	margin-top: 5px;
+}
+#login_form input[type="text"] {
+	color: #ccc;
+	width: 99%;
+	border: 1px solid #ccc;
+}
+#login_form .forgot_password {
+	float: right;
+	margin-top: 10px;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+
+
+
+/* Form Elements */
+form.formPersonal {
+	margin: 0 -5px 0 0;
+	padding: 0;
+	float: left;
+}
+.required {
+	/*background: url(../img/form.required.png) right 2px no-repeat !important;*/
+	padding-right: 0px;
+}
+div.form_field {
+	display: inline-block;
+	float: left;
+	margin: 25px 0 0 0;
+	padding-right: 16px;
+	color: #575757;
+	font-size: 11px;
+	line-height: 15px;
+}
+div.form_field.stand_alone {
+	margin-bottom: -22px;
+}
+label {
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+}
+span.label {
+	margin: 0;
+	float: left;
+	display: block;
+	border: 1px solid blue;
+}
+.inline {
+	float: left;
+	display: inline-block;
+	margin: 5px 5px 0 0;
+	width: auto;
+	height: 12px;
+}
+input {
+	width: 100%;
+	margin: 5px 0;
+	height: 20px;
+	border: 1px solid #d1d1d1;
+	overflow: hidden;
+}
+select {
+	width: 100%;
+	margin: 5px 0;
+	height: 20px;
+	border: 1px solid #d1d1d1;
+	overflow: hidden;
+}
+input[type="text"] {
+	padding-left: 5px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	float: left;
+	width: auto;
+	margin: 2px 10px 0 2px;
+	display: inline-block;
+	border: none;
+	margin-top: -2px;
+}
+textarea {
+	width: 100%;
+	margin: 5px 0;
+	height: 150px;
+	border: 1px solid #d1d1d1;
+	overflow: scroll;
+}
+
+/* Drupal occasionally enters <p> into the form */
+form p {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+form br {
+	clear: left;
+}
+form .row_end {
+	padding-right: 0;
+}
+form .no_label {
+	margin-top: 6px;
+}
+form hr.dots.span_left_column {
+	margin: 50px 0 0 -269px;
+}
+hr.span_left_column {
+	margin: 50px -269px;
+}
+
+/* Just a way to give flexibility to those making the forms, without forcing in-line styles */
+.percent_auto { width: auto; margin-right: 1%; }
+.percent_10 { width: 6%; margin-right: 1%; }
+.percent_15 { width: 11%;  margin-right: 1%; }
+.percent_20 { width: 16%;  margin-right: 1%; }
+.percent_25 { width: 21%;  margin-right: 1%; }
+.percent_30 { width: 26%;  margin-right: 1%; }
+.percent_35 { width: 31%;  margin-right: 1%; }
+.percent_40 { width: 36%;  margin-right: 1%; }
+.percent_45 { width: 41%;  margin-right: 1%; }
+.percent_50 { width: 46%;  margin-right: 1%; }
+.percent_55 { width: 51%;  margin-right: 1%; }
+.percent_60 { width: 56%;  margin-right: 1%; }
+.percent_65 { width: 61%;  margin-right: 1%; }
+.percent_70 { width: 66%;  margin-right: 1%; }
+.percent_75 { width: 71%;  margin-right: 1%; }
+.percent_80 { width: 76%;  margin-right: 1%; }
+.percent_85 { width: 81%;  margin-right: 1%; }
+.percent_90 { width: 86%;  margin-right: 1%; }
+.percent_95 { width: 91%;  margin-right: 1%; }
+.percent_97 { width: 95%;  margin-right: 1%; }
+.percent_100 { width:100%;  margin-right: 1%; }
+div.percent_15 { width: 59px; }
+div.percent_20 { width: 84px; }
+div.percent_25 { width: 109px; }
+div.percent_30 { width: 134px; }
+div.percent_35 { width: 159px; }
+div.percent_40 { width: 184px; }
+div.percent_45 { width: 209px; }
+div.percent_50 { width: 234px; }
+div.percent_55 { width: 258px; }
+div.percent_60 { width: 283px; }
+div.percent_65 { width: 308px; }
+div.percent_70 { width: 333px; }
+div.percent_75 { width: 358px; }
+div.percent_80 { width: 383px; }
+div.percent_85 { width: 408px; }
+div.percent_90 { width: 433px; }
+div.percent_95 { width: 458px; }
+div.percent_100 { width: 494px; }
+div.percent_10.row_end { width: 45px; }
+div.percent_15.row_end { width: 70px; }
+div.percent_20.row_end { width: 95px; }
+div.percent_25.row_end { width: 120px; }
+div.percent_30.row_end { width: 145px; }
+div.percent_35.row_end { width: 170px; }
+div.percent_40.row_end { width: 195px; }
+div.percent_45.row_end { width: 220px; }
+div.percent_50.row_end { width: 245px; }
+div.percent_55.row_end { width: 274px; }
+div.percent_60.row_end { width: 294px; }
+div.percent_65.row_end { width: 319px; }
+div.percent_70.row_end { width: 344px; }
+div.percent_75.row_end { width: 369px; }
+div.percent_80.row_end { width: 394px; }
+div.percent_85.row_end { width: 419px; }
+div.percent_90.row_end { width: 444px; }
+div.percent_95.row_end { width: 469px; }
+
+
+/* Form Footer */
+div.form_end {
+	display: inline-block;
+	width: 100%;
+	padding: 20px 0;
+	font-size: 12px;
+	line-height: 16px;
+}
+.label_required {
+	display: inline-block;
+	background: url(../img/form.required.png) left top no-repeat !important;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+input.button {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	padding: 8px 10px 8px 8px;
+	margin: 10px 10px 10px 0;
+	font-size: 13px;
+	line-height: 17px;
+	color: #5f6062;
+	background-color: #ececec;
+	border: none;
+}
+input.button {
+	padding: 5px 10px 5px 7px;
+}
+input.button.previous {
+	padding: 5px 10px 5px 20px;
+	background: #ececec url(../img/arrow.previous.png) no-repeat 8px center;
+}
+input.button.submit {
+	padding: 5px 30px 5px 7px;
+	color: #fff;
+	background: #a2ae1f url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+div.form_end input.button {
+	float: right;
+	margin-top: 0;
+}
+
+
+
+/* Registration Form */
+.formRegister h2 {
+	margin: 25px 0 -10px 0;
+}
+.formRegister .label_required {
+	float: right;
+	display: block;
+	margin-top: 15px;
+}
+
+
+
+
+/* Form Elements */
+.form-required {}
+.form-item {}
+.form-type-textfield {}
+.form-type-password {}
+/*
+#edit-actions {}
+#edit-submit {}
+*/
+
+
+
+/* Footer */
+#footer {}
+
+
+/*---------ADDED CSS STYLING--------------*/
+.dot_line {
+	height: 25px;
+	border-bottom:dotted;
+	border-color:gray;
+	border-width:1px;
+}
+.inrow {
+	
+}
+
+.fieldset-wrapper {
+	width:499px;
+	height:504px;
+}
+legend {
+	font-size:14px;
+	font-weight:bold;
+	margin-top:20px;
+	margin-bottom:25px;
+}
+span.fieldset-legend {
+	margin-top:15px;
+}
+
+label {
+	font-size:11px;
+}
+
+.submit-register {
+padding: 5px 30px 5px 7px;
+color: white;
+background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+width:75px;
+height:25px;
+border: none;
+margin-top:25px;
+}
+
+.form_field_1 {
+	display: inline-block;
+	float: left;
+	width:245px;
+	height:47px;
+	margin-bottom:15px;
+}
+
+.form_field_2 {
+	display: inline-block;
+	width:245px;
+	height:47px;
+	margin-bottom:15px;
+}
+
+.form_field_3 {
+	width:245px;
+	height:47px;
+	margin-bottom:15px;
+}
+.form_field_4 {
+	float:right;
+	width:245px;
+	height:47px;
+	margin-bottom:15px;
+}
+.form-item-primary {
+	float:left;
+	width:245px;
+	height:47px;
+	margin-bottom:15px;
+}
+
+.form-item-secondary {
+	float:left;
+	width:245px;
+	height:47px;
+	margin-bottom:15px;
+}
+
+
+.select-specialty {
+
+}
+
+/*INFORMATION FORM CSS STYLE*/
+.form-wrapper{
+	width:500px;
+}
+.lname{
+	float:left;
+  width:245px;
+}
+
+.fname {
+	float:left;
+  width:200px;
+}
+
+.initial {
+	float:left;
+  width:50px;
+}
+.phone_choice {
+	margin-right:5px;
+  float:left;
+  width:85px;
+  height:22px; 
+}
+.phone_number {
+	margin-right:5px;
+  float:left;
+  width:149px;
+}
+
+.email {
+  float:left;
+  width:247px;
+
+}
+.home-address {
+	width: 491px;
+
+}
+
+.city {
+	float:left;
+  width:250px;
+
+}
+.state {
+	float:left;
+  width:175px;
+}
+.zipcode {
+	float:left;
+  width:72px;
+}
+
+.birth-country{
+	float:left;
+  width:175px;
+}
+.form-select {
+	height:22px; 
+}
+.edu-country, .select_country, .form-item-birth-country {
+	float:left;
+  width:155px;
+  margin-right: 10px;
+  height:22px; 
+}
+.form-item-premed-0-country {
+	float:left;
+  width:175px;
+}
+.birth-state  {
+	float:left;
+  width:155px;
+  
+}
+.edu-state, .select_state, .form-item-birth-state, .form-item-premed-0-country {
+	float:left;
+  width:155px;
+  margin-right: 10px;
+  height:22px; 
+}
+.birth-city, .edu-city {
+	/*margin-right:10px;*/
+	float:left;
+  width:160px;
+}
+.form-item-verification {
+	float:left;
+	margin-right:10px;
+}
+.p-r-yn {
+	width:auto;
+	float:left;
+	margin-top: 5px;
+}
+.radios-yes-no {
+	width:auto;
+	float:left;
+}
+.option {
+	padding-top:10px;
+}
+.var_label {
+	padding-top:10px;
+	width:auto;
+	float:left;
+	margin-right: 15px;
+}
+.edit-verification-yes {
+	display:inline-block;
+}
+.edit-verification-no {
+	display:inline-block;
+}
+.label_inline {
+	margin: 0;
+	display: inline-block;
+	float:left;
+}
+
+.marital-status {
+	float:left;
+  width:175px;
+}
+.spouse {
+	float:left;
+  width:175px;
+}
+.n-children {
+	float:left;
+  width:147px;
+}
+.date-padding {
+	padding:0px;
+}
+#edit-dob {
+	padding:0px;
+}
+.date-month {
+ margin-right:5px;
+}
+.date-day {
+ margin-right:5px;
+}
+.date-year {
+ margin-right:5px;
+}
+ .textarea-processed {
+ 	
+ }
+.required_field {
+   background: url(../img/form.required.png) right 2px no-repeat !important;
+   padding-right: 5px;
+   float:left;
+   margin-top:15px;
+   width: auto:
+}
+.line_left {
+	width: 767px;
+	margin: 35px -269px;
+	border: none;
+	background: url(../img/hr.form-end.png);
+}
+
+#edit-prev {
+	float:right;
+margin-top:-20px;
+
+}
+#edit-save-logout {
+  float:right;
+ margin-top:-20px;
+}
+.identity-submit {
+float:right;
+width:100px;
+height:25px;	
+padding: 5px 30px 5px 7px;
+border: none;
+margin-top:-20px;
+margin-bottom:100px;
+margin-right:10px;
+color: white;
+background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+
+
+
+
+/*--------PRE-MEDICAL EDUCATION ------*/
+.school-edu {
+	width: 200px;
+}
+
+/*.container-inline-date  {
+ display:inline;
+}
+.date-padding {
+}
+}
+.container-inline-date {
+	width: 275px;
+}
+#edit-premed-0-date-from {
+	float:left;
+	width:275px;
+	
+}
+
+#edit-p-add-another {
+	width:250px
+	padding:5px;
+	color:#ffffff;
+	background-color:#cccccc;
+}*/
+.ajax-processed {
+	width: 200px;
+}

@@ -1,0 +1,2920 @@
+/**
+ * @file
+ * Job Application Layout
+ */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+ v2.0 | 20110126
+ License: none (public domain)
+ */
+/*behavior: url(../www/sites/all/themes/jobapp/css/PIE.htc);*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Page Setup */
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+  color: #858585;
+}
+a, a:active, a:visited {
+  text-decoration: none;
+  color: #858585;
+}
+a:hover {
+  text-decoration: none;
+  color: #575757;
+}
+#page {
+  width: 767px;
+  margin: 0 auto;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+h1 {
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: bold;
+  margin: 20px 2px 10px 0;
+  color: #5f5f60;
+}
+#page-title, #name-and-slogan, #site-name {
+  display: none;
+}
+h2 {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 15px 2px 20px 0;
+  color: #888387;
+}
+h3 {
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+hr.dots {
+  float: left;
+  width: 767px;
+  margin: 15px 0;
+  border: none;
+  background: url(../img/hr.form-end.png);
+}
+hr {
+  /*float: left;*/
+  width: 767px;
+  margin: 15px 0;
+  border: none;
+  background: url(../img/hr.form-end.png);
+}
+
+.error_message {
+  width: 90%;
+  padding: 5%;
+  color: #fa5d00;
+  background: #ececec;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Main Content */
+#main {
+  width: 767px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#content {
+  padding-top: 10px;
+  float: left;
+  display: block;
+}
+
+#content, #sidebar_left, #sidebar_right, #main.one_column #content .center_column, #main.one_column #content .left_column, #main.one_column #content .right_column {
+  float: left;
+  display: inline;
+  position: relative;
+}
+
+/* Columns */
+#main.one_column #content, .one_column .center_column {
+  width: 100%;
+}
+#main.two_column #content, .two_column .center_column {
+  width: 65%;
+}
+#main.three_column #content {
+  width: 30%;
+}
+#main.two_column #sidebar_left, #main.three_column #sidebar_left, .left_column {
+  width: 30%;
+  margin-right: 5%;
+}
+#main.two_column #sidebar_right, #main.three_column #sidebar_right, .right_column {
+  width: 30%;
+  margin-left: 5%;
+}
+.three_column .center_column {
+  width: 30%;
+}
+
+/* The small margins occur on the login pages, where there are specific widths */
+.small_margins.two_column .center_column {
+  width: 508px;
+}
+.small_margins .left_column {
+  width: 248px;
+  margin-right: 11px;
+}
+.small_margins .right_column {
+  width: 248px;
+  margin-left: 11px;
+}
+
+/* Header */
+#header {
+}
+#logo {
+  float: left;
+  margin-top: 20px;
+}
+#name-and-slogan {
+  display: none;
+}
+
+/* Navigation */
+#navigation {
+  display: none;
+}
+#breadcrumb {
+  display: none;
+}
+
+/* Top Nav */
+#topNav {
+  float: right;
+  margin: 10px -10px 0 0;
+}
+#topNav h2 {
+  display: none;
+}
+#topNav ul {
+  margin-right: 0;
+  list-style: none;
+}
+#topNav ul li {
+  display: inline;
+  width: auto;
+  float: left;
+  background: url(../img/divider.pipe.png) no-repeat top right;
+  margin: 0;
+  padding: 0 10px 0 5px;
+  list-style: none;
+}
+#topNav ul li a, #topNav ul li a:hover, #topNav ul li a:active, #topNav ul li a:visited {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 15px;
+}
+#popup_contactUs {
+  display: none;
+  clear: both;
+  float: right;
+  height: 10px;
+  width: 170px;
+  padding: 10px;
+  margin: 8px 8px 0 0;
+  background-color: #ececec;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+}
+#popup_contactUs a, #popup_contactUs a:hover, #popup_contactUs a:active, #popup_contactUs a:visited {
+  font-weight: normal;
+}
+
+/* Top Blue Menu */
+#blueMenu {
+  clear: left;
+  float: left;
+  width: 767px;
+  margin: 20px auto 0 auto;
+}
+#blueBarWelcome, #standalone_Welcome {
+  font-size: 17px;
+  line-height: 21px;
+  float: right;
+  margin-top: 6px;
+  color: #575757;
+}
+#blueBarWelcome .applicantName, #standalone_Welcome .applicantName {
+  font-weight: bold;
+}
+#standalone_Welcome {
+  clear: left;
+  margin: -10px 0;
+}
+#blueTabs {
+  display: block;
+  float: left;
+  padding-left: 0;
+  margin: 0;
+}
+#blueTabs li {
+  list-style: none;
+  display: inline-block;
+  height: 20px;
+  padding: 12px 23px 0 12px;
+  background: #ececec url(../img/corner.white.png) no-repeat right top;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+}
+#blueTabs li a, #blueTabs li a:hover, #blueTabs li a:active, #blueTabs li a:visited {
+  color: #5f6062;
+}
+
+/*-----------------*/
+.mydoc a:active {
+  background-color: #899fad;
+  color: #fff;
+}
+.mydoc a:active {
+  background-color: #899fad;
+  color: #fff;
+}
+/*-----------------*/
+#blueTabs .active {
+  background-color: #899fad;
+}
+#blueTabs .active a, #blueTabs .active a:hover, #blueTabs .active a:active, #blueTabs .active a:visited {
+  color: #fff;
+}
+#blueBar_small {
+  clear: both;
+  display: block;
+  padding-left: 0;
+  margin: 0px;
+  height: 6px;
+  background-color: #899fad;
+}
+#blueBar {
+  display: none;
+  clear: both;
+  /* 	display: block; */
+  padding-left: 0;
+  margin: 0px;
+}
+#blueBar li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 0 0 40px;
+  font-size: 11px;
+  line-height: 15px;
+}
+#blueBar a, #blueBar a:hover, #blueBar a:active, #blueBar a:visited {
+  color: white;
+}
+#blueBar .tab1 {
+  width: 100px;
+  background: #899fad url(../img/icon.circle-1.png) 15px 10px no-repeat;
+}
+#blueBar .tab2 {
+  width: 90px;
+  margin-left: -3px;
+  background: #899fad url(../img/icon.circle-2.png) 15px 10px no-repeat;
+}
+#blueBar .tab3 {
+  width: 125px;
+  margin-left: -3px;
+  background: #899fad url(../img/icon.circle-3.png) 15px 10px no-repeat;
+}
+#blueBar .tab4 {
+  width: 80px;
+  margin-left: -3px;
+  background: #899fad url(../img/icon.circle-4.png) 15px 10px no-repeat;
+}
+#blueBar .tab5 {
+  width: 50px;
+  margin-left: -3px;
+  background: #899fad url(../img/icon.circle-5.png) 15px 10px no-repeat;
+}
+#blueBar .tab6 {
+  width: 80px;
+  margin-left: -3px;
+  background: #899fad url(../img/icon.circle-6.png) 15px 10px no-repeat;
+}
+#blueBar .tabClock {
+  background: #899fad url(../img/icon.circle-clock.png) 15px 10px no-repeat;
+}
+#blueBar .tabChecked {
+  background: #899fad url(../img/icon.circle-check.png) 15px 10px no-repeat;
+}
+#blueBar hr {
+  height: 4px;
+  border-width: 0;
+  color: white;
+  background-color: white;
+}
+#blueBar .tab1 hr {
+  margin-right: 25%;
+}
+#blueBar .tab2 hr {
+  margin-right: 29%;
+}
+#blueBar .tab3 hr {
+  margin-right: 19%;
+}
+#blueBar .tab4 hr {
+  margin-right: 32%;
+}
+#blueBar .tab5 hr {
+  margin-right: 33%;
+}
+#blueBar .tab6 hr {
+  margin-right: 31%;
+}
+
+/* Left Application Process */
+#leftNav {
+}
+#leftNav .h1 {
+  margin: 22px 2px 2px 0;
+}
+#leftNav ul {
+  padding: 0;
+  margin: 0;
+}
+#leftNav ul li {
+  font-size: 12px;
+  line-height: 16px;
+  list-style: none;
+  display: inline-block;
+  float: left;
+  clear: left;
+  margin-left: -1px;
+  padding: 4px 20px 4px 0;
+}
+#leftNav ul li.hr {
+  height: 2px;
+  width: 140px;
+  background: url(../img/hr.gray-hairline.png) no-repeat left center;
+}
+#leftNav ul li.check {
+  background: url(../img/icon.small-circle-check.png) no-repeat right center;
+}
+#leftNav ul li.clock {
+  background: url(../img/icon.small-circle-clock.png) no-repeat right center;
+}
+#leftNav ul li a, #leftNav ul li a:active, #leftNav ul li a:visited {
+  font-weight: bold;
+  color: #858585;
+}
+#leftNav ul li a:hover {
+  font-weight: bold;
+  color: #575757;
+}
+#leftNav ul li.active a, #leftNav ul li.active a:hover, #leftNav ul li.active a:active, #leftNav ul li.active a:visited {
+  color: #a0b02b;
+}
+#leftNav ul li a .light, #leftNav ul li a:hover .light, #leftNav ul li a:active .light, #leftNav ul li a:visited .light {
+  font-weight: normal;
+}
+
+/* Home Page */
+#page_home img {
+  margin: 15px 0 -5px 0;
+}
+.home_text {
+  display: block;
+  height: 110px;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+.home_text a, .home_text a:hover, .home_text a:active, .home_text a:visited {
+  color: #a1ad1f;
+}
+
+/* Login Page */
+#page_login p {
+  max-width: 420px;
+}
+#page_login p.subtext {
+  margin-top: 20px;
+}
+#login_form {
+  margin-top: 5px;
+}
+#login_form input[type="text"] {
+  color: #ccc;
+  width: 99%;
+  border: 1px solid #ccc;
+}
+#login_form .forgot_password {
+  float: right;
+  margin-top: 10px;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+/* Form Elements */
+form.formPersonal {
+  margin: 0 -5px 0 0;
+  padding: 0;
+  float: left;
+}
+.required {
+  /*background: url(../img/form.required.png) right 2px no-repeat !important;*/
+  padding-right: 0px;
+}
+div.form_field {
+  display: inline-block;
+  float: left;
+  margin: 25px 0 0 0;
+  padding-right: 16px;
+  color: #575757;
+  font-size: 11px;
+  line-height: 15px;
+}
+div.form_field.stand_alone {
+  margin-bottom: -22px;
+}
+label {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+span.label {
+  margin: 0;
+  float: left;
+  display: block;
+  border: 1px solid blue;
+}
+.inline {
+  float: left;
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  width: auto;
+  height: 12px;
+}
+input {
+  width: 100%;
+  margin: 5px 0;
+  height: 20px;
+  border: 1px solid #d1d1d1;
+  overflow: hidden;
+}
+select {
+  width: 100%;
+  margin: 5px 0;
+  height: 20px;
+  border: 1px solid #d1d1d1;
+  overflow: hidden;
+}
+input[type="text"] {
+  padding-left: 5px;
+}
+input[type="radio"], input[type="checkbox"] {
+  float: left;
+  width: auto;
+  margin: 2px 10px 0 2px;
+  display: inline-block;
+  border: none;
+  margin-top: -2px;
+}
+textarea {
+  width: 100%;
+  margin: 5px 0;
+  height: 150px;
+  border: 1px solid #d1d1d1;
+  overflow: scroll;
+}
+
+/* Drupal occasionally enters <p> into the form */
+form p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+form br {
+  clear: left;
+}
+form .row_end {
+  padding-right: 0;
+}
+form .no_label {
+  margin-top: 6px;
+}
+form hr.dots.span_left_column {
+  margin: 50px 0 0 -269px;
+}
+hr.span_left_column {
+  margin: 50px -269px;
+}
+
+/* Just a way to give flexibility to those making the forms, without forcing
+ * in-line styles */
+.percent_auto {
+  width: auto;
+  margin-right: 1%;
+}
+.percent_10 {
+  width: 6%;
+  margin-right: 1%;
+}
+.percent_15 {
+  width: 11%;
+  margin-right: 1%;
+}
+.percent_20 {
+  width: 16%;
+  margin-right: 1%;
+}
+.percent_25 {
+  width: 21%;
+  margin-right: 1%;
+}
+.percent_30 {
+  width: 26%;
+  margin-right: 1%;
+}
+.percent_35 {
+  width: 31%;
+  margin-right: 1%;
+}
+.percent_40 {
+  width: 36%;
+  margin-right: 1%;
+}
+.percent_45 {
+  width: 41%;
+  margin-right: 1%;
+}
+.percent_50 {
+  width: 46%;
+  margin-right: 1%;
+}
+.percent_55 {
+  width: 51%;
+  margin-right: 1%;
+}
+.percent_60 {
+  width: 56%;
+  margin-right: 1%;
+}
+.percent_65 {
+  width: 61%;
+  margin-right: 1%;
+}
+.percent_70 {
+  width: 66%;
+  margin-right: 1%;
+}
+.percent_75 {
+  width: 71%;
+  margin-right: 1%;
+}
+.percent_80 {
+  width: 76%;
+  margin-right: 1%;
+}
+.percent_85 {
+  width: 81%;
+  margin-right: 1%;
+}
+.percent_90 {
+  width: 86%;
+  margin-right: 1%;
+}
+.percent_95 {
+  width: 91%;
+  margin-right: 1%;
+}
+.percent_97 {
+  width: 95%;
+  margin-right: 1%;
+}
+.percent_100 {
+  width: 100%;
+  margin-right: 1%;
+}
+div.percent_15 {
+  width: 59px;
+}
+div.percent_20 {
+  width: 84px;
+}
+div.percent_25 {
+  width: 109px;
+}
+div.percent_30 {
+  width: 134px;
+}
+div.percent_35 {
+  width: 159px;
+}
+div.percent_40 {
+  width: 184px;
+}
+div.percent_45 {
+  width: 209px;
+}
+div.percent_50 {
+  width: 234px;
+}
+div.percent_55 {
+  width: 258px;
+}
+div.percent_60 {
+  width: 283px;
+}
+div.percent_65 {
+  width: 308px;
+}
+div.percent_70 {
+  width: 333px;
+}
+div.percent_75 {
+  width: 358px;
+}
+div.percent_80 {
+  width: 383px;
+}
+div.percent_85 {
+  width: 408px;
+}
+div.percent_90 {
+  width: 433px;
+}
+div.percent_95 {
+  width: 458px;
+}
+div.percent_100 {
+  width: 494px;
+}
+div.percent_10.row_end {
+  width: 45px;
+}
+div.percent_15.row_end {
+  width: 70px;
+}
+div.percent_20.row_end {
+  width: 95px;
+}
+div.percent_25.row_end {
+  width: 120px;
+}
+div.percent_30.row_end {
+  width: 145px;
+}
+div.percent_35.row_end {
+  width: 170px;
+}
+div.percent_40.row_end {
+  width: 195px;
+}
+div.percent_45.row_end {
+  width: 220px;
+}
+div.percent_50.row_end {
+  width: 245px;
+}
+div.percent_55.row_end {
+  width: 274px;
+}
+div.percent_60.row_end {
+  width: 294px;
+}
+div.percent_65.row_end {
+  width: 319px;
+}
+div.percent_70.row_end {
+  width: 344px;
+}
+div.percent_75.row_end {
+  width: 369px;
+}
+div.percent_80.row_end {
+  width: 394px;
+}
+div.percent_85.row_end {
+  width: 419px;
+}
+div.percent_90.row_end {
+  width: 444px;
+}
+div.percent_95.row_end {
+  width: 469px;
+}
+
+/* Form Footer */
+div.form_end {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+.label_required {
+  display: inline-block;
+  background: url(../img/form.required.png) left top no-repeat !important;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+input.button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 8px 10px 8px 8px;
+  margin: 10px 10px 10px 0;
+  font-size: 12px;
+  line-height: 17px;
+  color: #5f6062;
+  background-color: #ececec;
+  border: none;
+  font-weight: bold;
+}
+input.button {
+  padding: 5px 10px 5px 7px;
+}
+input.button.previous {
+  padding: 5px 10px 5px 20px;
+  background: #ececec url(../img/arrow.previous.png) no-repeat 8px center;
+}
+input.button.submit {
+  padding: 5px 30px 5px 7px;
+  color: #fff;
+  background: #a2ae1f url(../img/corner.submit.white.png) no-repeat right bottom;
+  font-weight: bold;
+}
+input.button.submit:hover {
+  background-color: #ccdb27;
+}
+div.form_end input.button {
+  float: right;
+  margin-top: 0;
+}
+
+/* Registration Form */
+.formRegister h2 {
+  margin: 25px 0 -10px 0;
+}
+.formRegister .label_required {
+  float: right;
+  display: block;
+  margin-top: 15px;
+}
+
+/* Form Elements */
+.form-required {
+}
+.form-item {
+}
+.form-type-textfield {
+}
+.form-type-password {
+}
+/*
+ #edit-actions {}
+ #edit-submit {}
+ */
+
+/* Footer */
+#footer {
+}
+/*--------------USER LOGIN CSS STYLE STARTS HERE------------------------*/
+
+.JobApp-user-login-form-wrapper {
+  display: none;
+}
+#log {
+  width: 767px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+}
+#register-now {
+  width: 500px;
+  float: left;
+  margin-right: 17px;
+}
+#register-now h1 {
+  color: #575757;
+}
+#register-now p {
+  float: left;
+  width: 400px;
+}
+#register-now p strong {
+  font-weight: bold;
+}
+#create-acc {
+  float: left;
+  width: 190px;
+  margin-top: 50px;
+  padding: 8px 30px 8px 20px;
+  color: #ffffff;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+#create-acc a {
+  color: #FFFFFF;
+}
+
+#registered-user {
+  float: left;
+  width: 250px;
+}
+/*#img-reg-now {
+ background: url(../img/photo.steps.png) no-repeat;
+ height:89px;
+ }*/
+input[type=text]:focus {
+  color: #000000;
+}
+input[type=text] {
+  color: #808080;
+}
+input[type=password] {
+  color: #CCCCCC;
+  padding-left: 5px;
+}
+#username-txt, #password-txt {
+  color: #CCCCCC;
+}
+.login-btn {
+  padding: 7px 30px 22px 20px;
+  color: #ffffff;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+  margin-right: 35px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: auto;
+  font-size: 14px;
+  float: left;
+  border: none;
+  font-weight: bold;
+}
+#forgot-pass {
+  width: auto;
+  margin-top: 20px;
+  float: right;
+}
+
+/*--------------------USER LOGIN CSS STYLE ENDS HERE----------------------*/
+
+/*--------------USER STEPS CSS STYLE STARTS HERE------------------------*/
+#steps {
+  width: 767px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+}
+#my-application, #my-docs, #my-email {
+  float: left;
+  width: 245px;
+  margin-right: 10px;
+}
+#my-application-txt a {
+  color: #A2AE1F;
+  font-weight: bold;
+}
+#my-application p, # #my-docs p, #my-email p {
+  width: 150px;
+}
+#my-application-btn, #my-docs-btn {
+  float: left;
+  width: 190px;
+  padding: 7px 30px 7px 20px;
+  color: #ffffff;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  width: auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#my-email-btn {
+  float: left;
+  width: 190px;
+  padding: 7px 30px 7px 20px;
+  color: #ffffff;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+#my-application-btn a, #my-email-btn a, #my-docs-btn a {
+  color: #FFFFFF;
+}
+/*---------------------------------------------------------------*/
+#why-apply {
+  width: 500px;
+}
+#why-apply p {
+  font-size: 14px;
+  line-height: 20px;
+}
+#why-apply p strong {
+  font-size: 16px;
+}
+/*--------------------USER STEPS CSS STYLE ENDS HERE----------------------*/
+
+/*--------------USER FORGOT PASSWORD CSS STYLE STARTS HERE------------------------*/
+.JobApp-user-pass-form-wrapper {
+  display: none;
+}
+#forgot-pass-reset {
+  width: 767px;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+}
+#line {
+  width: 767px;
+  margin: 35px 0px 20px;
+  border-bottom: solid;
+  border-bottom-color: #999;
+  border-width: 1px;
+}
+.forgot-pass-btn {
+  padding: 5px 25px 20px 10px;
+  color: #ffffff;
+  background-color: #A2AE1F;
+  width: auto;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+#email-pass {
+  width: 250px;
+}
+/*--------------USER FORGOT PASSWORD CSS STYLE ENDS
+ * HERE------------------------*/
+
+/*---------ADDED CSS STYLING--------------*/
+.content {
+  padding-top: 12px;
+}
+
+.dot_line {
+  height: 25px;
+  border-bottom: dotted;
+  border-color: gray;
+  border-width: 1px;
+}
+.inrow {
+
+}
+
+.fieldset-wrapper {
+  width: 499px;
+  /*height:504px;*/
+
+}
+legend {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+span.fieldset-legend {
+  /*margin-top:15px;*/
+}
+
+label {
+  font-size: 11px;
+}
+
+.submit-register {
+  padding: 5px 30px 5px 7px;
+  color: white;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+  width: 75px;
+  height: 25px;
+  border: none;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.form_field_1 {
+  display: inline-block;
+  float: left;
+  width: 245px;
+  height: 47px;
+  margin-bottom: 15px;
+}
+
+.form_field_2 {
+  display: inline-block;
+  width: 245px;
+  height: 47px;
+  margin-bottom: 15px;
+}
+
+.form_field_3 {
+  width: 245px;
+  height: 47px;
+  margin-bottom: 15px;
+}
+.form_field_4 {
+  float: right;
+  width: 245px;
+  height: 47px;
+  margin-bottom: 15px;
+}
+.form-item-primary {
+  float: left;
+  width: 245px;
+  height: 47px;
+  margin-bottom: 15px;
+}
+
+.form-item-secondary {
+  float: left;
+  width: 245px;
+  height: 47px;
+  margin-bottom: 15px;
+}
+
+.select-specialty {
+
+}
+
+/*--------------INFORMATION FORM CSS STYLE----------------------*/
+.form-wrapper {
+  width: 500px;
+}
+.lname {
+  float: left;
+  width: 225px;
+}
+/*-------Password styling----------*/
+.form-item-question {
+  width: 320px;
+  float: left;
+  margin-right: 25px;
+}
+.form-item-answer {
+  float: left;
+  width: 120px;
+}
+.form-item-answer input {
+  width: 110px;
+}
+.form-item-pass-pass1 {
+  margin-bottom: 20px;
+  width: 480px;
+}
+.form-item-pass-pass1 input {
+  width: 218px;
+  margin-right: 25px;
+}
+.form-item-pass-pass2 {
+  margin-bottom: 20px;
+  width: 480px;
+}
+.form-item-pass-pass2 input {
+  width: 218px;
+  margin-right: 25px;
+}
+.form-item-pass-pass1 label {
+  width: auto;
+}
+.form-item-pass-pass2 label {
+  width: auto;
+}
+.password-strength {
+  margin-right: 30px;
+}
+.password-confirm {
+  margin-right: 30px;
+}
+div.form-item div.password-suggestions {
+  width: 450px;
+}
+.password-indicator {
+  width: 218px;
+}
+/*-------------------PERSONAL INFORMATION-------------------------*/
+.fname {
+  float: left;
+  width: 218px;
+}
+
+.initial {
+  float: left;
+  width: 50px;
+}
+.phone_choice {
+  margin-right: 5px;
+  float: left;
+  width: 85px;
+  height: 22px;
+}
+.phone_number {
+  margin-right: 5px;
+  float: left;
+  width: 149px;
+}
+
+.email {
+  float: left;
+  width: 247px;
+}
+.home-address {
+  width: 491px;
+}
+
+.city {
+  float: left;
+  width: 240px;
+}
+.city input {
+  width: 210px;
+}
+.state {
+  float: left;
+  width: 175px;
+}
+
+.zipcode {
+  float: left;
+  width: 82px;
+  margin-left: 10px;
+}
+
+.birth-country {
+  float: left;
+  width: 175px;
+}
+.form-select {
+  height: 22px;
+}
+.edu-country, .select_country, .form-item-birth-country, .form-item-premed-0-country {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+/*.form-item-premed-0-country {
+ float:left;
+ width:175px;
+ }*/
+.birth-state {
+  float: left;
+  width: 155px;
+}
+.edu-state, .select_state, .form-item-birth-state, .form-item-premed-0-state {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+.form-item-home-state {
+  float: left;
+  width: 155px;
+  margin-right: 20px;
+  height: 22px;
+}
+.birth-city, .edu-city, .form-item-premed-0-city {
+  /*margin-right:10px;*/
+  float: left;
+  width: 160px;
+}
+
+.form-item-verification {
+  float: left;
+  margin-right: 10px;
+}
+.form-item-verification .form-required {
+	display:none;
+}
+.p-r-yn {
+  width: auto;
+  float: left;
+  margin-top:0px;
+}
+@-moz-document url-prefix() {
+	.p-r-yn {
+  margin-top:15px;
+  }
+}
+.radios-yes-no {
+  width: auto;
+  float: left;
+}
+.option {
+  padding-top: 10px;
+}
+.var_label {
+  margin-top:10px;
+  width: auto;
+  float: left;
+  margin-right: 10px;
+}
+.var_label_iden {
+	margin-top:20px;
+  width: auto;
+  float: left;
+  margin-right: 10px;
+}
+.edit-verification-yes {
+  display: inline-block;
+}
+.edit-verification-no {
+  display: inline-block;
+}
+.label_inline {
+  margin: 0;
+  display: inline-block;
+  float: left;
+}
+
+.marital-status {
+  float: left;
+  width: 175px;
+}
+.spouse {
+  float: left;
+  width: 175px;
+}
+.n-children {
+  float: left;
+  width: 147px;
+}
+.date-padding {
+  padding: 0px;
+}
+#edit-dob {
+  padding: 0px;
+}
+.date-month {
+  margin-right: 5px;
+}
+.date-day {
+  margin-right: 5px;
+}
+.date-year {
+  margin-right: 5px;
+}
+.textarea-processed {
+
+}
+.comment {
+  float: left;
+}
+.required_field {
+  background: url(../img/form.required.png) right 2px no-repeat !important;
+  padding-right: 5px;
+  float: left;
+  margin-top: -15px;
+  width: auto;
+}
+.line_left {
+  width: 767px;
+  margin: 35px -269px;
+  border: none;
+  background: url(../img/hr.form-end.png);
+  height: 1px;
+  float: left;
+  margin-right: 150px;
+}
+#edit-next {
+  float: right;
+  margin-top: -20px;
+}
+#edit-prev {
+  float: right;
+  margin-top: -20px;
+}
+#edit-save-logout {
+  float: right;
+  margin-top: -20px;
+}
+.identity-submit {
+  font-weight: bold;
+  float: right;
+  width: auto;
+  height: 25px;
+  padding: 5px 25px 5px 10px;
+  border: none;
+  margin-top: -20px;
+  margin-bottom: 100px;
+  color: white;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+.identity-prev, .identity-save {
+  float: right;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 8px 10px 8px 8px;
+  margin: 10px 10px 10px 0;
+  font-size: 12px;
+  line-height: 17px;
+  color: #5f6062;
+  background-color: #ececec;
+  border: none;
+}
+.identity-save, .identity-prev {
+  padding: 5px 0px 5px 0px;
+  float: right;
+}
+.identity-prev {
+  padding: 5px 10px 5px 20px;
+  background: #ececec url(../img/arrow.previous.png) no-repeat 8px center;
+}
+.prev {
+  float: right;
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 10px 10px 10px 0;
+  color: #5f6062;
+  background-color: #ececec;
+  border: none;
+  padding: 5px 10px 5px 20px;
+  background: #ececec url(../img/arrow.previous.png) no-repeat 8px center;
+}
+.next {
+	float: right;
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 10px 10px 10px 0;
+  color: #5f6062;
+  background-color: #ececec;
+  border: none;
+  padding: 5px 20px 5px 10px;
+  background: #ececec url(../img/arrow-next.jpg) no-repeat 45px center;
+}
+.prev:hover {
+  background: #dddddd url(../img/arrow.previous.png) no-repeat 8px center;
+}
+.pinfo-date {
+  clear: both;
+}
+
+/*-------------------------------PRE-MEDICAL EDUCATION
+ * ---------------------------------*/
+
+#med-fieldset-wrapper, #premed-fieldset-wrapper {
+  overflow: hidden;
+}
+
+.school-edu {
+  width: 100%;
+}
+*[class*='premed-school'] {
+  width: 492px;
+}
+*[class*='premed-country'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='premed-state'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='premed-city'] {
+  float: left;
+  width: 160px;
+}
+*[class*='premed-date-from'] {
+  float: left;
+  display: inline;
+  width: auto;
+}
+*[class*='premed-date-from'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+*[class*='premed-date-to'] {
+  float: left;
+}
+*[class*='premed-date-to'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+*[class*='premed-degree'] {
+  width: 320px;
+}
+
+*[class*='med-school'] {
+  width: 492px;
+}
+*[class*='med-country'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='med-state'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='med-city'] {
+  float: left;
+  width: 160px;
+}
+*[class*='med-date-from'] {
+  float: left;
+  display: inline;
+  width: auto;
+}
+*[class*='med-date-from'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+*[class*='med-date-to'] {
+  float: left;
+}
+*[class*='med-date-to'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+*[class*='med-degree'] {
+  width: 320px;
+}
+*[class*='med-ecfmg'] {
+  width: 180px;
+}
+*[class*='med-ecfmg'] label {
+  width: auto;
+  float: left;
+}
+*[class*='med-yes-no'] {
+  float: left;
+  margin-right: 5px;
+  margin-top:5px;
+}
+*[class*='med-exp-date'] {
+  float: left;
+  width: auto;
+  display: inline;
+  padding-top: 5px;
+}
+@-moz-document url-prefix() {
+	*[class*='med-exp-date'] {
+     margin-right:50px;
+  }
+}
+*[class*='med-exp-date'] label {
+  float: left;
+  display: inline;
+  width: auto;
+  size: auto;
+  margin-right: 10px;
+  /*margin-left: 13px;*/
+  padding-top: 5px;
+}
+*[class*='valid-indef'] {
+  float: left;
+  margin-right: 3px;
+}
+
+.container-inline-date .date-padding {
+  padding: 0px;
+}
+
+.line-solid {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  height: 5px;
+  border-bottom: solid;
+  border-bottom-color: #999;
+  border-width: 1px;
+}
+.line-solid2 {
+  margin-top: 60px;
+  margin-bottom: 15px;
+  height: 5px;
+  border-bottom: solid;
+  border-bottom-color: #999;
+  border-width: 1px;
+}
+@-moz-document url-prefix() {
+	.line-solid2 {
+  margin-top: 90px;
+  }
+}
+.line-solid3 {
+  margin-top: 120px;
+  margin-bottom: 15px;
+  height: 5px;
+  border-bottom: solid;
+  border-bottom-color: #999;
+  border-width: 1px;
+}
+.line-solid-submit {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  height: 5px;
+  border-bottom: solid;
+  border-bottom-color: #999;
+  border-width: 1px;
+}
+.line-solid-exam {
+  margin-top: 90px;
+  margin-bottom: 15px;
+  height: 5px;
+  border-bottom: solid;
+  border-bottom-color: #999;
+  border-width: 1px;
+}
+.container-inline-date {
+  clear: none;
+}
+
+*[id*='edit-premed-add-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-premed-remove-school'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-med-add-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+@-moz-document url-prefix() {
+	*[id*='edit-med-add-another'] {
+    float:left;
+   }
+}
+*[id*='edit-med-remove-school'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+@-moz-document url-prefix() {
+	*[id*='edit-med-remove-school'] {
+    float:left;
+   }
+}
+.ajax-processed {
+  width: auto;
+}
+
+/*.form-item-med-0-valid-indef, .form-item-med-1-valid-indef,
+ * .form-item-med-2-valid-indef {
+ float:left;
+ margin-right:5px;
+ }
+ .form-item-med-0-exp-date, .form-item-med-1-exp-date, .form-item-med-2-exp-date
+ * {
+ float: left;
+ width: auto;
+ display: inline;
+ padding-top: 10px;
+ margin-right:30px;
+ }
+
+ .form-item-med-0-exp-date label, .form-item-med-1-exp-date label,
+ * .form-item-med-2-exp-date label {
+ float: left;
+ display: inline;
+ width: auto;
+ size: auto;
+ margin-right: 10px;
+ margin-left: 13px;
+ padding-top: 10px;
+ }
+ #edit-med-0-exp-date, #edit-med-1-exp-date, #edit-med-2-exp-date {
+ margin-top: -5px;
+ padding-top: 10px;
+ }
+ */
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  border: 1px solid red;
+}
+.education-submit:hover {
+  background: #949b30 url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+/*-------------------------------CSS STYLE
+ * INTERNSHIP----------------------------------*/
+
+*[class*='internship-type'] {
+  width: 110px;
+  float: left;
+  margin-right: 30px;
+}
+*[class*='internship-institution'] {
+  width: 350px;
+  float: left;
+}
+*[class*='internship-country'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='internship-state'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='internship-city'] {
+  float: left;
+  width: 160px;
+}
+*[class*='internship-prog_dir'] {
+  width: 200px;
+}
+*[class*='date-title'] {
+  float:left;
+  margin-right:300px;
+}
+*[class*='internship-date_from'] {
+  float: left;
+  display: inline;
+  width: auto;
+}
+*[class*='internship-date_from'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+*[class*='internship-date_to'] {
+  float: left;
+}
+*[class*='internship-date_to'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.internship-submit {
+  font-weight: bold;
+  float: right;
+  width: auto;
+  height: 25px;
+  padding: 5px 25px 5px 10px;
+  border: none;
+  margin-top: -20px;
+  margin-bottom: 100px;
+  color: white;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+.internship-submit:hover {
+  background: #949b30 url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+*[id*='edit-internship-add-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-internship-remove-school'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+/*----------------------------------CSS STYLE
+ * RESIDENCY------------------------------------*/
+.residency-title {
+  margin-bottom: 5px;
+}
+
+*[class*='residency-type'] {
+  width: 110px;
+  float: left;
+  margin-right: 30px;
+}
+*[class*='residency-institution'] {
+  width: 350px;
+  float: left;
+}
+*[class*='residency-country'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='residency-state'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='residency-city'] {
+  float: left;
+  width: 160px;
+}
+*[class*='residency-prog_dir'] {
+  width: 200px;
+}
+*[class*='residency-date'] {
+
+}
+*[class*='residency-date_from'] {
+  float: left;
+  display: inline;
+  width: auto;
+}
+*[class*='residency-date_from'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+*[class*='residency-date_to'] {
+  float: left;
+}
+*[class*='residency-date_to'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/*.form-item-residency-type, .form-item-residency-type2,
+ .form-item-residency-cntr-0-type, .form-item-residency-cntr-1-type,
+ .form-item-residency-cntr-2-type, .form-item-residency-cntr-3-type  {
+ width:110px;
+ float:left;
+ margin-right:30px;
+ }
+ .form-item-residency-institution, .form-item-residency-institution2,
+ .form-item-residency-cntr-0-institution,
+ * .form-item-residency-cntr-1-institution,
+ .form-item-residency-cntr-2-institution, .form-item-residency-cntr-3-institution
+ * {
+ width:350px;
+ float:left;
+ }
+ .form-item-residency-cntr-0-country, .form-item-residency-cntr-0-state,
+ .form-item-residency-cntr-1-country, .form-item-residency-cntr-1-state,
+ .form-item-residency-cntr-2-country, .form-item-residency-cntr-2-state,
+ .form-item-residency-cntr-3-country, .form-item-residency-cntr-3-state {
+ float:left;
+ width:155px;
+ margin-right: 10px;
+ height:22px;
+ }
+ .form-item-residency-cntr-0-city, .form-item-residency-cntr-1-city,
+ .form-item-residency-cntr-2-city, .form-item-residency-cntr-3-city {
+ float:left;
+ width:160px;
+ }
+
+ .form-item-residency-cntr-0-prog-dir, .form-item-residency-cntr-1-prog-dir,
+ .form-item-residency-cntr-2-prog-dir, .form-item-residency-cntr-3-prog-dir {
+ width:200px;
+ }
+
+ .form-item-residency-cntr-0-date-from, .form-item-residency-cntr-1-date-from,
+ .form-item-residency-cntr-2-date-from, .form-item-residency-cntr-3-date-from {
+ float:left;
+ display:inline;
+ width:auto;
+ }
+
+ .form-item-residency-cntr-0-date-from label,
+ * .form-item-residency-cntr-1-date-from label,
+ .form-item-residency-cntr-1-date-from label,
+ * .form-item-residency-cntr-2-date-from label,
+ .form-item-residency-cntr-2-date-from label,
+ * .form-item-residency-cntr-3-date-from label,
+ .form-item-residency-cntr-3-date-from label,
+ * .form-item-residency-cntr-4-date-from label {
+ float: left;
+ size: auto;
+ width: auto;
+ margin-top: 10px;
+ font-size: 12px;
+ margin-right: 5px;
+ }*/
+*[id*='edit-residency-cntr-residency-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-residency-cntr-residency-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-residency-add-res'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-residency-remove-res'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-fellowship-add-fellow'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-fellowship-remove-fellow'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[class$='date-to'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.form-item-residency-cntr-0-date-to, .form-item-residency-cntr-1-date-to {
+  float: left;
+}
+.txt {
+  font-weight: bold;
+}
+
+.residency-submit {
+  font-weight: bold;
+  float: right;
+  width: auto;
+  height: 25px;
+  padding: 5px 25px 5px 10px;
+  border: none;
+  margin-top: -20px;
+  margin-bottom: 100px;
+  color: white;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+.residency-submit:hover {
+  background: #949b30 url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+
+/*------------------CSS STYLE AFFILIATIONS----------------------*/
+p strong {
+  font-weight: bold;
+}
+.line-solid-aff {
+  margin-bottom: 15px;
+  height: 5px;
+  border-bottom: solid;
+  border-bottom-color: #999;
+  border-width: 1px;
+  margin-top: 100px;
+}
+.form-item-affiliations-not-applicable {
+  float: left;
+  margin-right: 400px;
+}
+*[class*='affiliations-facility'] {
+  width: 492px;
+}
+*[class*='affiliations-date_from'] {
+  float: left;
+  display: inline;
+  width: auto;
+}
+*[class*='affiliations-date_from'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+*[class*='affiliations-date_to'] {
+  float: left;
+}
+*[class*='affiliations-date_to'] label {
+  float: left;
+  size: auto;
+  width: auto;
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+*[class*='affiliations-address'] {
+  width: 492px;
+}
+*[class*='affiliations-country'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='affiliations-state'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='affiliations-city'] {
+  float: left;
+  width: 160px;
+}
+*[class*='affiliations-zip'] {
+  float: left;
+  width: 80px;
+  margin-right: 20px;
+}
+*[class*='affiliations-capacity'] {
+  float: left;
+  width: 80px;
+  margin-right: 300px;
+}
+
+*[id*='edit-affiliations-cntr-aff-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-affiliations-cntr-aff-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.required_field2 {
+  background: url(../img/form.required.png) right 2px no-repeat !important;
+  padding-right: 5px;
+  float: left;
+  margin-top: -10px;
+  width: auto;
+}
+.affiliations-submit, .education-submit {
+  font-weight: bold;
+  float: right;
+  width: auto;
+  height: 25px;
+  padding: 5px 25px 5px 10px;
+  border: none;
+  margin-top: -20px;
+  margin-bottom: 100px;
+  color: white;
+  background: #A2AE1F url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+input.button.submit:hover {
+  background: #949b30 url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+.affiliations-submit:hover {
+  background: #949b30 url(../img/corner.submit.white.png) no-repeat right bottom;
+}
+
+/*-----------------------CSS STYLE CERTIFICATIONS-----------------------------------*/
+
+.required_field1 {
+  background: url(../img/form.required.png) right 7px no-repeat !important;
+}
+
+.form-item-board-status {
+  /*float:left;*/
+  margin-right: 5px;
+  display: inline;
+  width: 230px;
+}
+.label-board {
+  width: auto;
+  float: left;
+}
+.form-required {
+
+}
+*[class*='-not-applicable'] label {
+  margin-right: 380px;
+}
+
+*[class*='-board-status'] label {
+  float: left;
+  margin-right: 15px;
+  /*padding-top:5px;*/
+}
+*[class*='-board-status'] label span {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+/**[class*='-board-status'] input {
+  margin-top:-7px;
+}*/
+/*.form-item-board-status label {
+ float: left;
+ margin-right: 15px;
+ }*/
+.form-type-radio {
+  display: inline;
+  float: left;
+}
+.form-type-radios label {
+  width: auto;
+  margin-top: -10px;
+}
+#edit-board-status {
+  display: inline;
+}
+.radios_board_status {
+  float: left;
+  margin-top: -3px;
+}
+/*.form-item-board {
+ float: left;
+ width: 250px;
+ padding-top:15px;
+ }*/
+*[class*='-board-sciences'] {
+  float: left;
+  width: 250px;
+  padding-top: 15px;
+}
+
+*[class*='-cert-recert'] {
+  width: 180px;
+  float: left;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+/*.form-item-cert-number {
+ float: left;
+ width: 100px;
+ margin-top: -1px;
+ }*/
+
+*[class*='-cert-number'] {
+  float: left;
+  width: 100px;
+  margin-top: -1px;
+}
+/*.form-item-cert-recert {
+ width: 180px;
+ float: left;
+ margin-top: -5px;
+ margin-bottom: 15px;
+ }*/
+
+*[class*='-board-exp-date'] {
+  float: left;
+}
+/*.form-item-board-exp-date {
+ float: left;
+ }*/
+
+*[class*='-cert-name'] {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+*[class*='-cert-name'] input {
+  width: 90px;
+}
+*[class*='-cert-num'] {
+  width: 100px;
+  float: left;
+}
+*[class*='-cert-num'] input {
+  width: 90px;
+}
+
+*[class*='-cert-exp-date'] {
+
+}
+.form-item-exp-date {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.form-item-ecfmg-exp-date {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+*[class*='-other-certifications'] {
+  width: 110px;
+  float: left;
+  margin-right: 20px;
+  margin-top: -1px;
+}
+.form-item-other-certifications {
+  width: 110px;
+  float: left;
+  margin-right: 20px;
+  margin-top: -1px;
+}
+
+.form-item-certifications-ecfmg-number {
+  width: 160px;
+  float: left;
+  margin-right: 20px;
+  margin-top: -1px;
+}
+
+*[id*='edit-board-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-board-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-certifications-board-board-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-certifications-board-board-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+*[id*='edit-certifications-addcerts-othcert-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-certifications-addcerts-othcert-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+/*-------------------------------CSS STYLE LICENSES----------------------------------*/
+
+#edit-deareg legend {
+
+}
+.form-item-licensure-fcvs {
+  width: 300px;
+}
+*[class*='-lic-type'] {
+  width: 300px;
+}
+*[class*='-country'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='-state'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+*[class*='-lic-number'] {
+  float: left;
+  width: 160px;
+}
+
+*[class*='-date-issued'] {
+  float: left;
+}
+@-moz-document url-prefix() {
+  *[class*='-date-issued'] {
+    width:auto;
+    
+  }
+}
+
+@-moz-document url-prefix() {
+  *[id*='edit-licenses-add-another'] {
+    padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+  }
+}
+*[id*='edit-licenses-add-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+@-moz-document url-prefix() {
+  *[id*='edit-licenses-add-another'] {
+    float:left;
+  }
+}
+*[id*='edit-deareg-add-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-licenses-remove-license'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-deareg-remove-deareg'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.line-solid1 {
+  margin-bottom: 35px;
+  height: 25px;
+  border-bottom: solid;
+  border-bottom-color: #999;
+  border-width: 1px;
+}
+*[class*='-deareg-na'] {
+  width: auto;
+  float: left;
+  margin-right: 20px;
+}
+/*.form-item-deareg-0-na,
+ .form-item-deareg-1-na,
+ .form-item-deareg-2-na {
+ width: auto;
+ float: left;
+ margin-right:20px;
+ margin-top:-2px;
+ }*/
+.form-item-deareg-pending {
+  float: left;
+  margin-right: 250px;
+}
+.form-item-deareg-pending label {
+
+}
+*[class*='dea-country'] {
+  float: left;
+  width: 155px;
+  margin-right: 10px;
+  height: 22px;
+}
+/*.form-item-deareg-0-dea-country  {
+ float:left;
+ width:155px;
+ margin-right: 10px;
+ height:22px;
+ }*/
+*[class*='dea-lic-num'] {
+  width: 100px;
+  float: left;
+  margin-right: 150px;
+}
+/*.form-item-deareg-0-dea-lic-num, .form-item-deareg-1-dea-lic-num,
+ .form-item-deareg-2-dea-lic-num {
+ width:100px;
+ float:left;
+ margin-right:150px;
+ }*/
+*[class*='deareg-date-issued'] {
+  float: left;
+  width: 160px;
+}
+*[class*='deareg-date-expired'] {
+  float: left;
+  width: 280px;
+}
+/*.form-item-deareg-0-dea-date-issued, .form-item-deareg-1-dea-date-issued,
+ .form-item-deareg-2-dea-date-issued, .form-item-deareg-3-dea-date-issued {
+ float:left;
+ width: 180px;
+ }*/
+.licenses-date {
+
+}
+.schedule {
+	margin-bottom:5px;
+}
+.edit-deareg-0-schedules {
+  display: inline-table;
+}
+*[class*='-not'] {
+  width: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+/*
+ .form-item-deareg-0-schedules-Not-Applicable,
+ .form-item-deareg-1-schedules-Not-Applicable,
+ .form-item-deareg-2-schedules-Not-Applicable {
+ float:left;
+ margin-right:20px;
+ }*/
+*[class*='all'] {
+  float: left;
+  margin-right: 345px;
+}
+/*.form-item-deareg-0-schedules-All,
+ .form-item-deareg-1-schedules-All,
+ .form-item-deareg-2-schedules-All {
+ width:350px;
+ float:left;
+ margin-right:20px;
+ }*/
+*[class*='-schedules2'] {
+  float: left;
+  margin-right: 27px;
+}
+*[class*='-schedules3'] {
+  float: left;
+  margin-right: 25px;
+}
+*[class*='-schedules4'] {
+  width: 350px;
+  float: left;
+  margin-right: 20px;
+}
+*[class*='-schedules2N'] {
+  float: left;
+  margin-right: 20px;
+}
+*[class*='-schedules3N'] {
+  float: left;
+  margin-right: 18px;
+}
+*[class*='-schedules5'] {
+  width: 350px;
+  float: left;
+  margin-right: 20px;
+}
+
+.form-checkbox {
+
+}
+/*.form-item-deareg-0-not, .form-item-deareg-1-not,
+ .form-item-deareg-2-not, .form-item-deareg-3-not {
+ float:left;
+ margin-right:20px;
+ }*/
+.small-line {
+  margin-bottom: 5px;
+  height: 1px;
+  border-bottom: solid;
+  border-bottom-color: #bfbfbf;
+  border-width: 1px;
+  width: 160px;
+  /*margin-right:350px;*/
+}
+.form-item-deareg-language-spoken {
+  width: 492px;
+}
+
+/*-----------------------------CSS STYLE REFERENCE STARTS
+ * HERE----------------------------*/
+#edit-references {
+}
+
+*[class*='reference-name'] {
+  float: left;
+  width: 235px;
+  margin-right: 20px;
+}
+*[class*='reference-association'] {
+  float: left;
+  width: 235px;
+}
+
+*[class*='reference-specialty'] {
+  float: left;
+  width: 235px;
+  margin-right: 20px;
+}
+/*.form-item-references-0-specialty, .form-item-references-1-specialty,
+ .form-item-references-2-specialty, .form-item-references-3-specialty,
+ .form-item-references-4-specialty, .form-item-references-5-specialty,
+ .form-item-references-6-specialty, .form-item-references-7-specialty {
+ float:left;
+ width:235px;
+ margin-right:20px;
+ }*/
+.phone_txtfld {
+  padding-top: 15px;
+}
+*[class*='reference-email'] {
+  width: 492px;
+}
+/*.form-item-references-0-email, .form-item-references-1-email,
+ .form-item-references-2-email, .form-item-references-3-email,
+ .form-item-references-4-email, .form-item-references-5-email,
+ .form-item-references-6-email, .form-item-references-7-email {
+ width:492px;
+ }*/
+*[id*='edit-references-references-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-references-references-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+/*---------------------------CSS STYLE DISCIPLINARY STARTS
+ * HERE----------------------*/
+
+*[class^="form-item form-type-radios form-item-disc"] {
+  width: 499px;
+  display: inline;
+  padding-bottom: 20px;
+  border-bottom: #808080 1px solid;
+  float: left;
+}
+*[class^="form-item form-type-radios form-item-disc"] label {
+  font-size: 12px;
+  float: left;
+  margin-right: 10px;
+  padding-top: 10px;
+  width: 350px;
+}
+
+.dis-radio {
+  float: right;
+  right: 0px;
+  width: 107px;
+}
+
+.dis-radio label {
+  width: auto;
+}
+/*----------------------UPLOAD CV PAGE---------------------------*/
+#edit-upload {
+  height: 350px;
+}
+#upload-btn input {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 4px 10px 4px 10px;
+  margin: 10px 10px 10px 0;
+  font-size: 12px;
+  color: #5f6062;
+  background-color: #ececec;
+  border: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+#upload-btn {
+  width: 60px;
+  float: left;
+  margin-top: 10px;
+  
+}
+.form-item-files-cv {
+  width: 400px;
+  float: left;
+}
+@-moz-document url-prefix() {
+	.form-item-files-cv {
+    width: 390px;
+    float: left;
+  }
+}
+.form-item-files-cv label {
+  font-size: 12px;
+  font-weight: bold;
+}
+.form-item-files-cv input {
+  background-image: url(../img/file-upload.png) no-repeat;
+}
+#edit-cv {
+  background-image: url(../img/file-upload.png) no-repeat;
+}
+.item-list ul li a {
+	font-weight:bold;
+	text-decoration:underline;
+}
+.item-list ul .removelink {
+	text-decoration:none;
+}
+.item-list h3 {
+	margin-bottom:10px;
+}
+.item-list {
+	padding-top:15px;
+  padding-left:20px;
+	float:left;
+	width:450px;
+	height:70px;
+	background-color:#ECECEC;
+}
+.removelink {
+	width: auto;
+  height: auto;
+  padding: 4px 10px 4px 10px;
+  margin: 10px 10px 10px 0;
+  font-size: 12px;
+  color: #5f6062;
+  background-color:#D1D1D1;
+  border: none;
+	margin-left:20px;
+	text-decoration: none;
+}
+h4 {
+  font-weight: bold;
+}
+div.description {
+  font-size:12px;
+}
+/*-------------------ADDED EXTRA CSS--------------------------*/
+input:-webkit-autofill {
+  background-color: #FFFFF;
+  background-image: none;
+  color: black;
+}
+/*#edit-action {
+ width: 65px;
+ background-color: #3D3D3D;
+ }*/
+#edit-sumbit {
+  background-color: #3D3D3D;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+.container-inline-date > .form-item {
+  margin-right: 15px;
+}
+.container-inline-date > [class*="-date-issued"] {
+  width: 150px;
+}
+
+.form-item, .form-actions {
+  margin-top: 0px;
+}
+#forgot-pass-reset .form-item-name {
+	margin-top:15px;
+}
+/*-----------------------TEMPLATE PAGES----------------------*/
+#submitted, #register-email, #forgot-pass-email {
+  margin-top: -20px;
+}
+@-moz-document url-prefix() {
+hr {
+	float:left;
+}
+}
+/*--------------------DoCUMENTS PAGE-------------------------*/
+.docs-header h2 {
+	width:767px;
+	font-size:13px;
+}
+#vistaportal-mydocuments-form .docs-txt ul li {
+	text-decoration:underline;
+	font-size:11px;
+	margin-left:10px;
+}
+
+.docs-txt {
+	margin-bottom:25px;
+}
+
+#userpage h2 a {
+	color:#a2ad20;
+}
+/*-----------------------------EXAM PAGE------------------------------*/
+
+*[class*='-exam-name'] {
+  float: left;
+  margin-right: 10px;
+  width:140px;
+}
+@-moz-document url-prefix() {
+	*[class*='-exam-name'] {
+  float: left;
+  margin-right: 10px;
+  width:130px;
+}
+}
+*[class*='-times'] {
+  float: left;
+  margin-right:5px;
+  /*margin-top:-15px;*/
+  width:60px;
+}
+*[class*='-times'] label {
+  margin-top:-15px;
+  line-height:12px;
+}
+@-moz-document url-prefix() {
+div.attempt02, div.attempt03,
+div.attempt04, div.attempt05,
+div.attempt06, div.attempt07 {
+	margin-left:205px;
+}
+}
+@-moz-document url-prefix() {
+div.attempt12, div.attempt13,
+div.attempt14, div.attempt15,
+div.attempt16, div.attempt17 {
+	margin-left:205px;
+}
+}
+@-moz-document url-prefix() {
+div.attempt22, div.attempt23,
+div.attempt24, div.attempt25,
+div.attempt26, div.attempt27 {
+	margin-left:205px;
+}
+}
+@-moz-document url-prefix() {
+div.attempt32, div.attempt33,
+div.attempt34, div.attempt35,
+div.attempt36, div.attempt37 {
+	margin-left:205px;
+}
+}
+@-moz-document url-prefix() {
+div.attempt42, div.attempt43,
+div.attempt44, div.attempt45,
+div.attempt46, div.attempt47 {
+	margin-left:205px;
+}
+}
+@-moz-document url-prefix() {
+div.attempt52, div.attempt53,
+div.attempt54, div.attempt55,
+div.attempt56, div.attempt57 {
+	margin-left:205px;
+}
+}
+*[class*='attempt'] {
+	float:left;
+	width:auto;
+	margin-top:10px;
+	margin-right:5px;
+	margin-left:215px;
+	/*border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #333;*/
+}
+.attempt01, .attempt11, .attempt21, .attempt31, .attempt41,
+.attempt51, .attempt61 {
+	margin-left:0px;
+	margin-top:25px;
+}
+/*.attempt02, .attempt03, .attempt04, .attempt05,
+.attempt06, .attempt07 {
+	margin-left:213px;
+}*/
+*[class*='-score'] {
+  float: left;
+  width:40px;
+}
+
+@-moz-document url-prefix() {
+	*[id*='edit-date'] {
+	width:auto;
+	display:inline;
+}
+}
+
+@-moz-document url-prefix() {
+	.date-month {
+	width:72px;
+	float:left;
+}
+}
+@-moz-document url-prefix() {
+	.date-year {
+	width:72px;
+	float:left;
+}
+}
+*[class*='-result'] {
+  float: left;
+  width:auto;
+  margin-bottom:30px;
+}
+*[class*='-result'] label {
+	width:auto;
+  margin-right:5px;
+}
+#state-exam-state *[class*='-state'] {
+ margin-bottom:30px;
+ width:150px;
+ margin-right:20px;
+}
+/*---------------dates for firefox---------------*/
+
+@-moz-document url-prefix() {
+#state-exam-state *[class*='-state'] {
+ margin-bottom:30px;
+ width:150px;
+ margin-right:20px;
+}
+}
+#state-exam-date *[class*='-state-exam-date'] {
+ margin-bottom:30px;
+ width:150px;
+}
+
+@-moz-document url-prefix() {
+	*[id*='-state-exam-date'] {
+	width:160px;
+	display:inline;
+}
+}
+@-moz-document url-prefix() {
+	*[id*='-date-issued'] {
+	width:165px;
+	display:inline;
+}
+}
+@-moz-document url-prefix() {
+	*[id*='-month'] {
+	width:auto;
+}
+}
+@-moz-document url-prefix() {
+	*[id*='-year'] {
+	width:auto;
+}
+}
+
+#state-exam-date *[class*='-month'] {
+ width:auto;
+}
+#state-exam-date *[class*='-year'] {
+ width:auto;
+}
+
+*[class*='-state-exam-date'] {
+  float: left;
+}
+*[id*='edit-exam-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+  
+}
+*[id*='edit-exams-taken-exam-another'], 
+*[id*='edit-exams-taken-exam-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+  
+}
+
+*[id*='edit-exam-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+*[id*='edit-exams-state-cntr-exam-another'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+*[id*='edit-exams-state-cntr-exam-remove'] {
+  padding: 5px 5px 20px 5px;
+  color: #ffffff;
+  background-color: #a5a5a5;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+/*--------------This is the test----------------------*/
+
+
+
+

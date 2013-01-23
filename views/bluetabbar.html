@@ -1,0 +1,50 @@
+<div id="blueMenu"> 
+	<ul id="blueTabs">
+		<li class="myapp"><a href="identity">My Application</a></li>
+		<li class="mydoc"><a href="mydocuments">My Documents</a></li>
+	</ul>
+	<div id="blueBarWelcome">Welcome, <span class="applicantName">nameplaceholder</span></div>
+	<div id="blueBar_small"> </div><!-- For Single Page Pre-Application -->
+	<ul id="blueBar">
+		<li class="tab1"><a href="#">Physician<br />Pre-Application</a><br /><hr /></li>
+		<li class="tabChecked tab2"><a href="#">Release &amp;<br />Authorization</a></li>
+		<li class="tab3"><a href="#">Malpractice<br />Insurance Coverage</a></li>
+		<li class="tabClock tab4"><a href="#">MedScope<br />Application</a></li>
+		<li class="tab5"><a href="#">Travel<br />Profile</a></li>
+		<li class="tab6"><a href="#">Placement<br />Agreement</a></li>
+	</ul>
+</div>
+
+
+<!--script type="text/javascript">
+var blueMenu = blueMenu = $('#blueMenu ul');
+    $(this).click(function (event) {
+        
+    event.preventDefault();
+    /* Add active class to clicked anchor's parent li */
+        
+    $(this).parent().addClass('active');
+    
+    /* Remove active class on any li when an anchor is clicked */
+    
+    blueMenu.children().removeClass();
+    
+    
+
+});
+</script-->
+
+<script type="text/javascript">
+(function ($) {
+	pageurl = $(location).attr('href');
+     if(pageurl.search(/mydocuments/i) > 0) {
+     	$('.mydoc').addClass('active');
+	  $('.myapp').removeClass('active');
+     }
+     else {
+     	$('.myapp').addClass('active');
+	  $('.mydoc').removeClass('active');
+     }
+     
+    })(jQuery);
+</script>
